@@ -53,6 +53,9 @@ final class Vemetric
         if (!empty($args['eventData'])) {
             $payload['customData'] = $args['eventData'];
         }
+        if (!empty($args['userDisplayName'])) {
+            $payload['displayName'] = $args['userDisplayName'];
+        }
         if (!empty($args['userData'])) {
             $payload['userData'] = $args['userData'];
         }

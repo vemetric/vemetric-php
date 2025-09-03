@@ -29,6 +29,7 @@ $vemetric = new Vemetric([
 // Track an event
 $vemetric->trackEvent('SignupCompleted', [
   'userIdentifier' => 'user-id',
+  'userDisplayName' => 'John Doe',
   'eventData'      => ['key' => 'value'],
 ]);
 

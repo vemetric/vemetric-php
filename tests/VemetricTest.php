@@ -60,12 +60,14 @@ class VemetricTest extends TestCase
     {
         $eventName = 'test-event';
         $userIdentifier = 'test-user';
+        $userDisplayName = 'John Doe';
         $eventData = ['key' => 'value'];
         $userData = ['name' => 'Test User'];
 
         $expectedPayload = [
             'name' => $eventName,
             'userIdentifier' => $userIdentifier,
+            'displayName' => $userDisplayName,
             'customData' => $eventData,
             'userData' => $userData
         ];
@@ -77,6 +79,7 @@ class VemetricTest extends TestCase
 
         $this->vemetric->trackEvent($eventName, [
             'userIdentifier' => $userIdentifier,
+            'userDisplayName' => $userDisplayName,
             'eventData' => $eventData,
             'userData' => $userData
         ]);
