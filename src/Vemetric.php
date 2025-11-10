@@ -78,8 +78,16 @@ final class Vemetric
 
         $payload = [
             'userIdentifier' => $args['userIdentifier'],
-            'data'           => $args['userData']       ?? null,
         ];
+        if (!empty($args['userDisplayName'])) {
+            $payload['displayName'] = $args['userDisplayName'];
+        }
+        if (!empty($args['userAvatarUrl'])) {
+            $payload['avatarUrl'] = $args['userAvatarUrl'];
+        }
+        if (!empty($args['userData'])) {
+            $payload['data'] = $args['userData'];
+        }
 
         try {
             $this->post('/u', $payload);

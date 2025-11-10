@@ -18,6 +18,7 @@ $vemetric->trackEvent('SignupCompleted', [
 // Update user later
 $vemetric->updateUser([
     'userIdentifier' => 'dmmIrnzUzVMJD03tjCiHXTEEgX6xIPJm',
+    'userAvatarUrl'  => 'https://pbs.twimg.com/profile_images/1623645336349601792/d03RX2V3_400x400.jpg',
     'userData'       => ['set' => ['plan' => 'Business']],
 ]);
 
