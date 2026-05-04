@@ -3,6 +3,7 @@
 /.gitattributes export-ignore
 /.gitignore export-ignore
 /.phpunit.result.cache export-ignore
+/examples export-ignore
 /phpunit.xml export-ignore
 /tests export-ignore
 /vendor export-ignore
